@@ -1,26 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card';
+import { gradients } from './data/colors';
 
+console.log(gradients);
 class App extends Component {
+
+  renderGradients() {
+    return gradients.map(item => {
+      return <Card
+        from={item[0]}
+        to={item[1]}
+      />
+    });
+  };
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <h1 className="title">Irongradients</h1>
+        <div className="body-gradients">
+          <div className="gradients">
+            {this.renderGradients()}
+          </div>
+        </div>
       </div>
+
+
     );
   }
 }

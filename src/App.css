@@ -31,3 +31,50 @@
     transform: rotate(360deg);
   }
 }
+
+
+.card {
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    border-radius: 12px;box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08), 0px 6px 18px 0px rgba(0,
+    0, 0, 0.05);
+  }
+  .card-gradient {
+    height: 160px;
+    width: 170px;
+    border-radius: 12px 12px 0px 0px;
+  }
+  .card-description {
+    border-radius: 0px 0px 12px 12px;
+    padding: 12px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .card-color-from {
+    color: #929197;
+    display: block;
+    padding: 0px;
+  }
+  .card-color-to {
+    color: rgb(3, 150, 255);
+  }
+
+  .title{
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(107, 102, 102);
+    font-size: 50px;
+  }
+
+  .body-gradients{
+    display: flex;
+    justify-content: center;
+  }
+  .gradients{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%
+  }
