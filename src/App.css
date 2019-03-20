@@ -69,6 +69,7 @@
     font-size: 50px;
   }
 
+
   .body-gradients{
     display: flex;
     justify-content: center;
@@ -76,5 +77,6 @@
   .gradients{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 60%
   }
